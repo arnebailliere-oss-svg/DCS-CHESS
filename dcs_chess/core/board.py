@@ -769,7 +769,6 @@ class Board(BaseBoard):
     # Castling rights helpers
     # ------------------------------------------------------------------
 
-    @property
     def clean_castling_rights(self) -> int:
         if self._stack:
             return self.castling_rights
@@ -825,7 +824,6 @@ class Board(BaseBoard):
             str(self.fullmove_number),
         ])
 
-    @property
     def shredder_fen(self) -> str:
         return self.fen(shredder=True)
 
