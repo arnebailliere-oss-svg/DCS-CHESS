@@ -66,7 +66,7 @@ class Outcome:
 
     def __repr__(self) -> str:
         return (
-            f"Outcome(termination=Termination.{self.termination.name}, "
+            f"Outcome(termination={self.termination!r}, "
             f"winner={self.winner!r})"
         )
 

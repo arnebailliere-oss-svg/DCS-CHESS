@@ -547,7 +547,7 @@ class BaseBoard:
         *,
         invert_color: bool = False,
         borders: bool = False,
-        empty_square: str = "⋅",
+        empty_square: str = "⭘",
         orientation: bool = WHITE,
     ) -> str:
         """Render the board as a Unicode string."""
